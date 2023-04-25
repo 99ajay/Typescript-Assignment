@@ -2,10 +2,12 @@
 
 
 function multiplication(firstNumber: number,secondNumber : number): number{
+    const maxItr=firstNumber>secondNumber ? secondNumber : firstNumber;
+    const numToAdd=maxItr!=firstNumber ? firstNumber : secondNumber;
     let result=0;
-    for(let i=1;i<=firstNumber;i++)
+    for(let i=1;i<=maxItr;i++)
     {
-        result=result+secondNumber;
+        result+=numToAdd;
     }
  return result;
 }
