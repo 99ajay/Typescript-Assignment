@@ -1,4 +1,4 @@
-function commonBoth(firstArray : number[],secondArray : number[]): number[]
+function notCommonBoth(firstArray : number[],secondArray : number[]): number[]
 {
    
      const maxLengthArray: number[] = (firstArray.length > secondArray.length) ? firstArray : secondArray;
@@ -32,5 +32,6 @@ function commonBoth(firstArray : number[],secondArray : number[]): number[]
     return notCommon;
      
 }
-console.log(commonBoth([5,5,9,8,5,5,8,0,3],[9,7,1,0,3,6,5,9,1,1,8,0,2,4,2,9,1,5]));
+console.log(notCommonBoth([5,5,9,8,5,5,8,0,3],[9,7,1,0,3,6,5,9,1,1,8,0,2,4,2,9,1,5]));
 
+export{}
